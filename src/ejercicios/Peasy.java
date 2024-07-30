@@ -2,10 +2,9 @@ package ejercicios;
 
 import java.util.Scanner;
 
-public class ProblemAEasyPeasyProblem {
+public class Peasy {
 
     public static void main(String[] args) {
-
 
         Scanner reader = new Scanner(System.in);
         float s1 = 0;
