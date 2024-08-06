@@ -18,8 +18,8 @@ public class Age {
                     return;
                 }
             }
-        }
 
+        }
         System.out.println("0");
     }
 
