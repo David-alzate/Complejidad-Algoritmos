@@ -8,7 +8,7 @@ public class DiagonalsA {
         int[] resultados = new int[cantidadCasos];
 
         for (int i = 0; i < cantidadCasos; i++) {
-            int tamaño = casosDePrueba[i][0];
+            int tamano = casosDePrueba[i][0];
             int chips = casosDePrueba[i][1];
 
             if (chips == 0) {
@@ -19,13 +19,13 @@ public class DiagonalsA {
             int diagonalesOcupadas = 0;
             int chipsRestantes = chips;
 
-            for (int longitud = tamaño; longitud > 0; longitud--) {
+            for (int longitud = tamano; longitud > 0; longitud--) {
                 if (chipsRestantes <= 0) {
                     break;
                 }
-                if (longitud == tamaño) {
+                if (longitud == tamano) {
                     diagonalesOcupadas++;
-                    chipsRestantes -= tamaño;
+                    chipsRestantes -= tamano;
                 } else {
                     if (chipsRestantes > 0) {
                         diagonalesOcupadas++;
@@ -51,9 +51,9 @@ public class DiagonalsA {
         int[][] casosDePrueba = new int[cantidadCasos][2];
 
         for (int i = 0; i < cantidadCasos; i++) {
-            int tamaño = scanner.nextInt();
+            int tamano = scanner.nextInt();
             int chips = scanner.nextInt();
-            casosDePrueba[i] = new int[]{tamaño, chips};
+            casosDePrueba[i] = new int[]{tamano, chips};
         }
 
         int[] resultados = calcularDiagonalesOcupadas(cantidadCasos, casosDePrueba);
