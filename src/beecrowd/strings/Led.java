@@ -18,18 +18,18 @@ public class Led {
     }
 
     public static int calcularNumeroLeds(String numero) {
-        Map<String, Integer> map = new HashMap<>();
+            Map<String, Integer> map = new HashMap<>();
 
-        map.put("1", 2);
-        map.put("2", 5);
-        map.put("3", 5);
-        map.put("4", 4);
-        map.put("5", 5);
-        map.put("6", 6);
-        map.put("7", 3);
-        map.put("8", 7);
-        map.put("9", 6);
-        map.put("0", 6);
+            map.put("1", 2);
+            map.put("2", 5);
+            map.put("3", 5);
+            map.put("4", 4);
+            map.put("5", 5);
+            map.put("6", 6);
+            map.put("7", 3);
+            map.put("8", 7);
+            map.put("9", 6);
+            map.put("0", 6);
 
         int suma = 0;
 
