@@ -16,16 +16,16 @@ public class Pokemons {
         System.out.println("Falta(m) " + catidadPoquemones(poquemones) + " pomekon(s).");
     }
 
-    public static ArrayList<String> poquemonesCapturados(int cantidad, Scanner scanner){
+    public static ArrayList<String> poquemonesCapturados(int cantidad, Scanner scanner) {
         ArrayList<String> poquemones = new ArrayList<>();
-        for (int i = 0; i < cantidad; i++){
+        for (int i = 0; i < cantidad; i++) {
             String nombre = scanner.nextLine().trim();
             poquemones.add(nombre);
         }
         return poquemones;
     }
 
-    public static int catidadPoquemones(ArrayList<String> poquemonesCapturados){
+    public static int catidadPoquemones(ArrayList<String> poquemonesCapturados) {
         int cantidadPoquemones = 151;
         Set<String> poquemonesUnicos = new HashSet<>(poquemonesCapturados);
         int cantidadUnicos = poquemonesUnicos.size();
